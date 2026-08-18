@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}404 - Tool Not Found | UtilityHub{% endblock %}
+
+{% block content %}
+<div class="max-w-2xl mx-auto px-4 py-20 text-center space-y-6">
+    <div class="w-20 h-20 rounded-3xl bg-rose-100 text-rose-600 flex items-center justify-center mx-auto shadow-md">
+        <i data-lucide="alert-triangle" class="w-10 h-10"></i>
+    </div>
+    
+    <div class="space-y-2">
+        <h1 class="text-3xl font-extrabold text-slate-900">404 - Tool Not Found</h1>
+        <p class="text-sm text-slate-500 max-w-md mx-auto">
+            The tool or page you requested does not exist or has been moved. Explore our 34+ free utilities from the homepage.
+        </p>
+    </div>
+
+    <a href="{{ url_for('index') }}" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-semibold text-sm shadow-md transition-all">
+        <i data-lucide="arrow-left" class="w-4 h-4"></i>
+        <span>Return to Dashboard</span>
+    </a>
+</div>
+{% endblock %}

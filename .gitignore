@@ -1,0 +1,21 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Temporary application folders
+uploads/*
+!uploads/.gitkeep
+outputs/*
+!outputs/.gitkeep
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# OS generated files
+.DS_Store
+Thumbs.db
